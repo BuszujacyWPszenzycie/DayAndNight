@@ -1,0 +1,58 @@
+@use 'colors' as *;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $white-body;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	transition: background-color 0.4s;
+}
+
+.wrapper {
+	width: 300px;
+	height: 100px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	perspective: 1000px;
+	background-color: $white-button;
+	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+	transition: background-color 0.4s;
+}
+
+.icon {
+	font-size: 7rem;
+	padding: 2rem;
+	cursor: pointer;
+	transition: margin-left 0.4s;
+	color: $sunny;
+}
+
+.body-night {
+	background-color: $black-background;
+}
+
+.wrapper-night {
+	background-color: $black-button;
+	box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon-night {
+	margin-left: 65%;
+	color: $moon;
+}

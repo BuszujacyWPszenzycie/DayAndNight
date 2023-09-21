@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.4s;
+}
+
+.wrapper {
+  width: 300px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  perspective: 1000px;
+  background-color: #d8d9da;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.4s;
+}
+
+.icon {
+  font-size: 7rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: margin-left 0.4s;
+  color: #ee9322;
+}
+
+.body-night {
+  background-color: #272829;
+}
+
+.wrapper-night {
+  background-color: #61677a;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon-night {
+  margin-left: 65%;
+  color: #252b48;
+}/*# sourceMappingURL=main.css.map */
